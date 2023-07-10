@@ -29,11 +29,29 @@ namespace Project2
             btnAddPet.Text = btnAddPetText;
             btnRemovePet.Text = btnRemovePetText;
 
-            string[] pets = { "Kedi", "Köpek", "Fil", "Maymun", "Yarasa" };
+            Pet pet1 = new Pet();
+            pet1.PetName = "Köpek";
+            Pet pet2 = new Pet();
+            pet2.PetName = "Kedi";
+            Pet pet3 = new Pet();
+            pet3.PetName = "Maymun";
+            Pet pet4 = new Pet();
+            pet4.PetName = "Yılan";
+            Pet pet5 = new Pet();
+            pet5.PetName = "Koyun";
+            Pet pet6 = new Pet();
+            pet6.PetName = "İnek";
 
-            foreach (string pet in pets)
+
+            List<Pet> pets = new List<Pet>()
             {
-                lbxPet.Items.Add(pet);
+                pet1, pet2, pet3, pet4, pet5, pet6
+            };
+            //string[] pets = { "Kedi", "Köpek", "Fil", "Maymun", "Yarasa" };
+
+            foreach (Pet pet in pets)
+            {
+                lbxPet.Items.Add(pet.PetName);
             }
 
             if (lbxCart.Items.Count == 0)
