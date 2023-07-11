@@ -17,6 +17,8 @@ namespace Project2
             InitializeComponent();
         }
 
+        Pet pet = new Pet();
+        //PetManager petManager = new PetManager();
         private void Form1_Load(object sender, EventArgs e)
         {
             string petsText = "Hayvanlar";
@@ -74,12 +76,12 @@ namespace Project2
             else
             {
                 MessageBox.Show("Herhangi Bir Hayvan Seçmediniz. Lütfen Hayvan Seçiniz.");
-            }          
+            }
         }
 
         private void btnRemovePet_Click(object sender, EventArgs e)
         {
-            if(lbxCart.SelectedItem != null)
+            if (lbxCart.SelectedItem != null)
             {
                 lbxPet.Items.Add(lbxCart.SelectedItem);
                 //string seciliHayvan = lbxCart.SelectedItem.ToString();
@@ -116,5 +118,6 @@ namespace Project2
                 btnAddPet.Enabled = false;
             }
         }
+
     }
 }
