@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Project5.Entities
 {
-    public class Customer:IEntity
+    //İmzalama amaçlı kullandım
+    //IEntity veritabanı nesnesi demek (entities katmanı demek)
+    public interface IEntity
     {
-        public int CustomerId { get; set; }
-        public string ContactName { get; set; }
     }
 }

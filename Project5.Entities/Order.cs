@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project5.Entities
 {
-    internal class Order
+    public class Order:IEntity
     {
     }
 }
