@@ -7,8 +7,13 @@ using System.Threading.Tasks;
 
 namespace Project5.DataAccess
 {
-    public interface IProductDal:IEntityRepository<Product>
+    public interface IEntityRepository<T>
     {
+        List<T> GetAll();
+        List<T> GetById(int id);
+        void Add(T entity);
+        void Update(T entity);
+        void Delete(T entity);
 
     }
 }

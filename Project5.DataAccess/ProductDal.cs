@@ -54,9 +54,24 @@ namespace Project5.DataAccess
             Console.WriteLine("Ado .NET ile Eklendi.");
         }
 
+        public void Delete(Product entity)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Product> GetAll()
         {
             return _products;
+        }
+
+        public List<Product> GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(Product entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }
